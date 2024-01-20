@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>怪奇魔術師-服務項目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(45deg, #000 50%, #222 50%);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('texture.jpg');
+            background-repeat: repeat;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #ff9900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .specialties {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photos {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photo {
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .promo-photo:hover {
+            transform: scale(1.1);
+        }
+
+        .promo-photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 50px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #660000 50%, #990000 50%);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0 20px;
+            transition: background 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .button:hover {
+            background-position: right bottom;
+        }
+
+        .divider {
+            border-top: 2px solid #333;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+
+        .circle1, .circle2, .circle3 {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .circle1 {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            top: 70%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+        .circle3 {
+            width: 200px;
+            height: 200px;
+            top: 40%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>服務項目</h1>
+       <img src="主頁照片.jpg" alt="Personal Cover Photo" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 20px;">
+    </header>
+
+<div class="specialties">
+    <h2>專場預告</h2>
+    <p>獨一無二的專場內容，帶你體驗前所未有的奇妙之旅。</p>
+     <div class="buttons">
+        <a href="#網址1" class="button">詳細資訊</a>
+    </div>
+</div>
+    </div>
+
+<div class="specialties">
+    <h2>表演預約</h2>
+    <p>各項表演預約，請用新台幣把我下架。</p>
+     <div class="buttons">
+        <a href="舞台魔術表演.html" class="button">舞台魔術表演</a>
+	<br>
+	<br>
+        <a href="#網址1" class="button">近距離魔術表演</a>
+	<br>
+	<br>
+        <a href="#網址1" class="button">客製化魔術表演</a>
+    </div>
+</div>
+    </div>
+
+<div class="specialties">
+    <h2>講座預約</h2>
+    <p>讓我們跟著怪奇魔術師杜奇，一同探索魔術的奧妙。</p>
+     <div class="buttons">
+        <a href="#網址1" class="button">紙牌魔術講座</a>
+	<br>
+	<br>
+        <a href="#網址1" class="button">客製化魔術講座</a>
+    </div>
+
+</div>
+    </div>
+
+
+<div class="specialties">
+    <h2>回饋專區</h2>
+    <p>您的回饋將是我們最大的動力。</p>
+
+     <div class="buttons">
+        <a href="#網址1" class="button">填寫還饋單</a>
+	</br>
+	</br>
+    </div>
+
+</div>
+    </div>
+
+
+ 
+
+     <div class="buttons">
+        <a href="../main.html" class="button">返回</a>
+     </div>
+
+    <div class="divider"></div>
+
+    <footer>
+        <div class="overlay"></div>
+        <p>聯絡我們：<span class="icon">&#9742;</span> +123 456 789</p>
+        <div class="social-icons">
+            <a href="#" class="icon">📘</a>
+            <a href="#" class="icon">📷</a>
+            <a href="#" class="icon">🕊️</a>
+        </div>
+    </footer>
+</body>
+</html>
