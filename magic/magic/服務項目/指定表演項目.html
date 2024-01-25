@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>客製化魔術表演</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(45deg, #000 50%, #222 50%);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('texture.jpg');
+            background-repeat: repeat;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #ff9900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .specialties {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photos {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photo {
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .promo-photo:hover {
+            transform: scale(1.1);
+        }
+
+        .promo-photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #660000 50%, #990000 50%);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0 20px;
+            transition: background 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .button:hover {
+            background-position: right bottom;
+        }
+
+        .divider {
+            border-top: 2px solid #333;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+
+        .circle1, .circle2, .circle3 {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .circle1 {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            top: 70%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+        .circle3 {
+            width: 200px;
+            height: 200px;
+            top: 40%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .specialties2 {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+            border: 2px solid #444; /* 暗色系的邊框顏色 */
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px; /* 圓角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 陰影效果，調整透明度為更深的暗色 */
+            background: linear-gradient(45deg, #333, #555); /* 背景漸變色，調整顏色為暗色系 */
+            color: #fff; /* 文字顏色為白色 */
+        }
+
+.specialties2 h2 {
+    text-align: left;
+    color: #ffcc00; /* 修改標題的顏色為黃色或其他亮眼的顏色 */
+    text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.8); /* 添加發光效果，調整顏色和模糊程度 */
+}
+
+.specialties2 p {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 5px; /* 設置較小的間距，可以根據需要調整 */
+}
+    </style>
+</head>
+<body>
+    <header>
+       <img src="主頁照片.jpg" alt="Personal Cover Photo" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 20px;">
+    </header>
+
+<div class="specialties">
+<div class="specialties2">
+        <h2>表演項目: 客製化術表演</h2>
+        <p><strong>簡介:</strong>準備體驗一場獨一無二的魔法奇蹟嗎？我將根據您的需求和喜好，為您打造一場客製化的魔術表演。不論是浪漫的求婚場面、生日驚喜，還是企業活動的亮點節目，我都能提供獨特的表演內容，創造出專屬於您的奇幻時刻。歡迎預約，讓我為您量身訂做這場魔法之旅！。</p>
+        </br>
+        <p><strong>適合對象:</strong>不限。</p>
+        </br>
+        <p><strong>適合場合:</strong>不限。</p>
+        </br>
+        <p><strong>表演時間:</strong>不限。</p>
+        </br>
+        <p><strong>價格:</strong>$?????台幣。</p>
+        <p>(車馬費另計)</p>
+
+        <!-- 預約按鈕 -->
+     <div class="buttons">
+        <a href="" class="button">我要預約</a>
+     </div>
+    </div>
+    </div>
+
+     <div class="buttons">
+        <a href="服務項目主頁.html" class="button">返回</a>
+     </div>
+
+    <div class="divider"></div>
+  
+
+    <footer>
+        <div class="overlay"></div>
+        <p>聯絡我們：<span class="icon">&#9742;</span> +123 456 789</p>
+        <div class="social-icons">
+            <a href="#" class="icon">📘</a>
+            <a href="#" class="icon">📷</a>
+            <a href="#" class="icon">🕊️</a>
+        </div>
+    </footer>
+</body>
+</html>

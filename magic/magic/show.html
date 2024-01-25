@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>怪奇魔術師·杜奇的個人網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(45deg, #000 50%, #222 50%);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('texture.jpg');
+            background-repeat: repeat;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+            color: #ff9900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .specialties {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photos {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-photo {
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .promo-photo:hover {
+            transform: scale(1.1);
+        }
+
+        .promo-photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 50px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(45deg, #660000 50%, #990000 50%);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0 20px;
+            transition: background 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .button:hover {
+            background-position: right bottom;
+        }
+
+        .divider {
+            border-top: 2px solid #333;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #111 50%, #333 50%);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+
+        .circle1, .circle2, .circle3 {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .circle1 {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            top: 70%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+        .circle3 {
+            width: 200px;
+            height: 200px;
+            top: 40%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>怪奇魔術師·杜奇</h1>
+       <img src="宣傳照.jpg" alt="Personal Cover Photo" style="width: 100%; max-width: 600px; border-radius: 10px; margin-bottom: 20px;">
+    </header>
+
+    <div class="specialties">
+        <h2>介紹</h2>
+        <p>🤡怪奇魔術師·杜奇🤡</p>
+        <p>  獵奇Ｘ荒謬Ｘ魔術</p>
+        <p>「大家好！我是怪奇魔術師·杜奇，不是那個肚臍，是奇怪的奇！因為我本人很奇怪、我的魔術更獵奇，我是一位荒謬怪誕匯集在一身的❗️危險人物❗️</p>
+    </div>
+
+    <div class="specialties">
+        <h2>獲獎經歷</h2>
+        <p>2023年【TMA魔術大會 近距離組】特別獎</p>
+        <p>2023年【粵港澳台魔術大會 近距離組】總冠軍</p>
+        <p>2023年【808魔術大會 近距離組】總冠軍</p>
+        <p>2022年【TMA獨角獸魔術大會】特別獎</p>
+    </div>
+
+    <div class="specialties">
+        <h2>演出經歷</h2>
+        <p>2023年舉辦百人魔術售票公演【怪奇魔術師。杜奇】演出</p>
+        <p>2023年知名酒吧【potions魔藥學】駐場魔術師</p>
+        <p>2023年擔任【台灣科技大學魔術社】指導老師</p>
+        <p>2023年參演宜蘭傳藝中心【怪盜·神判·綠珍珠】年度大駐園出演</p>
+        <p>2022年受邀【808魔術大會】演出嘉賓</p>
+        <p>2021年參演兩廳院秋季藝術節進港浪製作【神不在的小鎮】演出</p>
+        <p>2021年參演榮興客家採茶劇團國家戲劇院【天上人間．桃花源】演出</p>
+    </div>
+
+     <div class="buttons">
+        <a href="服務項目\服務項目主頁.html" class="button">點擊進入</a>
+     </div>
+
+    <div class="divider"></div>
+
+    <footer>
+        <div class="overlay"></div>
+        <p>聯絡我們：<span class="icon">&#9742;</span>0981993537</p>
+        <div class="social-icons">
+            <a href="#" class="icon">📘</a>
+            <a href="#" class="icon">📷</a>
+            <a href="#" class="icon">🕊️</a>
+        </div>
+    </footer>
+</body>
+</html>
